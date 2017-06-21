@@ -15,10 +15,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,8 +32,11 @@
 
 <body>
 
+    <div class="brand">Aero-Tech Precision Manufacturing</div>
+    <div class="address-bar">484 Champagne Dr | North York | 416.636.6000</div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -42,14 +46,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="index.html">Aero-Tech Precision Manufacturing</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
                     <li>
                         <a href="contact.html">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -57,43 +71,135 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
     <div class="container">
 
-        <!-- Features Section -->
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">What We Do</h2>
-            </div>
-            <div class="col-md-6">
-                <p>Aero-Tech Precision Machining has served its clients in the Greater Toronto Area for more than 20 years. Specializing in custom machining, we are a facility that produces quality work for commercial clients and custom machine builders. We also serve numerous other clients in need of our precision machining services.</p>
-                <p><b>Your Requests</b></p>
-                <p>We work with each customer to ensure we meet the specifications of your request.</p>
-                <p>Whether you have an idea for a store fixture to display your retail items, or innovative electronic components, we have the equipment and expertise to custom create your design to your precise specifications.</p>
-                <p>From CNC turning to general and custom machining, a small run or a large one, we produce high-quality pieces accurately, efficiently and in the timeliest manner.</p>
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
 
-                <p><b>Specialties</b></p>
-                <ul>
-                    <li>Custom Machining</li>
-                    <li>Machine Builders &amp; Store Fixtures</li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/sld-1.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/sld-2.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/sld-1.jpeg" alt="">
+                            </div>
+                        </div>
 
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Aero-Tech Precision Manufacturing 2017</p>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">Aero-Tech Precision Manufacturing</h1>
+                    <hr class="tagline-divider">
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>What we do</strong>
+                    </h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Aero-Tech Precision has served its clients in the Greater Toronto Area for more than 20 years. Specializing in custom machining, we are a facility that produces quality work for commercial clients and custom machine builders. We also serve numerous other clients in need of our precision machining services.</p>
+
+                            <p><b>Your Requests</b></p>
+                                        <p>Whether you have an idea for a store fixture to display your retail items, or innovative electronic components, we have the equipment and expertise to custom create your design to your precise specifications.</p>
+                                        <p>From CNC turning to general and custom machining, a small run or a large one, we produce high-quality pieces accurately, efficiently and in the timeliest manner.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                                <p><strong>PROTOTYPING</strong></p>
+                                <p>Talk to us to make your design a reality. We can assist you in designing and prototyping your project.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p><strong>PRODUCTION MACHINING</strong></p>
+                                <p>Our shop can produce small to medium-scale CNC production runs.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p><strong>MAINTENANCE &amp; REPAIR</strong></p>
+                                <p>We can replace custom parts, modify existing pieces, or machine into tolerance.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Contact
+                        <strong>Aero-Tech</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-8">
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.3952700268924!2d-79.47716488499736!3d43.76465315323532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0123ab6489%3A0x5535835a42d273bb!2s484+Champagne+Dr%2C+North+York%2C+ON+M3J+2C6%2C+Canada!5e0!3m2!1sen!2sus!4v1485405386772" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+                <div class="col-md-4">
+                    <p>Phone:
+                        <strong>416.636.6000</strong>
+                    </p>
+                    <p>Email:
+                        <strong><a href="mailto:nachiaerotech@gmail.com">nachiaerotech@gmail.com</a></strong>
+                    </p>
+                    <p>Address:
+                        <strong>484 Champagne Drive
+                            <br>North York, ON M3J 2T9</strong>
+                    </p>
+                    <p>
+                        Hours:
+                        <strong>
+                        <br>
+                        Monday - Friday: 9:00 AM to 5:00 PM
+                        <br>
+                        Saturday: 9:00 AM to 12:00 PM
+                        </strong>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
 
     </div>
     <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Aero-Tech Precision 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
